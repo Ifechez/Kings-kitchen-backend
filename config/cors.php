@@ -4,17 +4,15 @@ return [
     'paths' => ['api/*'],
     'allowed_methods' => ['*'],
     'allowed_origins' => [
-        'https://kingskitchen.vercel.app',
+        'https://kings-kishen.vercel.app',
         'http://localhost:5173', // local frontend dev
     ],
-    // Lets Vercel's own preview deployments (kingskitchen-git-*.vercel.app,
-    // kingskitchen-<hash>.vercel.app) through too. Remove this if you only
-    // ever want the production frontend origin to be able to call the API.
+    // Vercel preview deployments for your account only
     'allowed_origins_patterns' => [
-        '#^https://kingskitchen(-[a-z0-9-]+)?\.vercel\.app$#',
+        '#^https://kings-kitchen(-[a-z0-9]+)*-ifechez11-1808s-projects\.vercel\.app$#',
     ],
     'allowed_headers' => ['*'],
     'exposed_headers' => [],
     'max_age' => 0,
-    'supports_credentials' => false, // Bearer-token auth, not cookies — leave false
+    'supports_credentials' => false,
 ];
