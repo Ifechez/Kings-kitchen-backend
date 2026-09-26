@@ -4,7 +4,8 @@ return [
     'paths' => ['api/*'],
     'allowed_methods' => ['*'],
     'allowed_origins' => [
-        'https://kings-kishen.vercel.app',
+        'https://www.kings-kitchen.com.ng',
+        'https://kings-kitchen.com.ng',
         'http://localhost:5173', // local frontend dev
     ],
     // Vercel preview deployments for your account only
